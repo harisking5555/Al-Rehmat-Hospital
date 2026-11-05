@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking }) =
             </p>
 
             <div className="text-xs text-slate-600">
-              <span className="text-slate-900 font-bold block mb-0.5">Medical Patron:</span>
+              <span className="text-slate-900 font-bold block mb-0.5">Senior Consultant:</span>
               <span className="text-slate-700">{HOSPITAL_INFO.patron}</span>
             </div>
           </div>

@@ -16,11 +16,51 @@ export const HOSPITAL_INFO = {
   address: "Warpal Chattha, Seem Nala, Gujranwala, Punjab, Pakistan",
   secondaryBranch: "Sialkot Bypass, Opposite Sheikh Siddique Eye Hospital, Gujranwala",
   emergencyHours: "24 Hours / 7 Days a Week",
-  opdHours: "Daily 10:00 AM – 07:00 PM",
+  opdHours: "Daily 09:00 AM – 07:00 PM",
   chughtaiLabHours: "24/7 Homecare & Sample Collection",
 };
 
 export const DOCTORS_DATA: Doctor[] = [
+  {
+    id: "dr-tabassum",
+    name: "Lady Dr. Tabassum",
+    urduName: "",
+    title: "General Physician & Outpatient Specialist",
+    department: "General Medicine & Emergency",
+    departmentUrdu: "",
+    qualification: "M.B.B.S, R.M.P",
+    experience: "Extensive experience in outpatient diagnosis, internal medicine, and emergency care",
+    specialties: [
+      "General Medical Consultations & Health Checkups",
+      "Hypertension, Diabetes & Fever Management",
+      "Acute Outpatient & Preventive Care"
+    ],
+    timing: "Daily: 09:30 AM – 05:30 PM",
+    days: ["Daily"],
+    image: "",
+    gender: "female",
+    notes: "Available daily for full-day clinical and outpatient consultations."
+  },
+  {
+    id: "dr-aslam",
+    name: "Dr. Aslam",
+    urduName: "",
+    title: "Senior Medical Consultant & Physician",
+    department: "General Medicine & Clinical Care",
+    departmentUrdu: "",
+    qualification: "D.H.M.S, R.H.M.P",
+    experience: "Decades of dedicated clinical practice, community medicine, and family wellness",
+    specialties: [
+      "Comprehensive Clinical Consultations",
+      "Chronic Disease Management & Counseling",
+      "Community Wellness & Holistic Healthcare"
+    ],
+    timing: "Daily: 09:30 AM – 05:30 PM",
+    days: ["Daily"],
+    image: "",
+    gender: "male",
+    notes: "Senior clinical consultant at Al Rehmat Hospital."
+  },
   {
     id: "dr-nadeem-aslam",
     name: "Dr. Nadeem Aslam Sikandar",
@@ -43,8 +83,90 @@ export const DOCTORS_DATA: Doctor[] = [
     notes: "Specialist in pediatric developmental delays and acute medicine."
   },
   {
+    id: "dr-nazia-jabeen",
+    name: "Lady Dr. Nazia Jabeen (LHV)",
+    urduName: "",
+    title: "Consultant Gynecologist & Maternity Specialist (LHV)",
+    department: "Gynecology & Obstetrics",
+    departmentUrdu: "",
+    qualification: "M.B.B.S, FCPS Post-Graduate Training (Obs/Gyne), Certified LHV",
+    experience: "Comprehensive clinical experience in maternal care, labor suites, and prenatal health",
+    specialties: [
+      "Normal Delivery & Antenatal Checkups",
+      "Female Infertility & Ovarian Health",
+      "Minor & Major Gynecological Surgeries",
+      "Postnatal Health & Lactation Support"
+    ],
+    timing: "Daily: 09:00 AM – 02:00 PM",
+    days: ["Daily"],
+    image: "https://i.postimg.cc/ZKcJxmb4/dr-nazia.jpg",
+    gender: "female",
+    notes: "Daily outpatient and emergency maternity management with full female clinical team."
+  },
+  {
+    id: "dr-javeria-safdar",
+    name: "Lady Dr. Javeria Safdar",
+    urduName: "",
+    title: "Senior Physiotherapist & Neuro-Rehab Specialist",
+    department: "Physiotherapy & Rehabilitation",
+    departmentUrdu: "",
+    qualification: "Doctor of Physical Therapy (D.P.T, University of Lahore)",
+    experience: "Specialist in neurological rehabilitation and orthopedic physiotherapy",
+    specialties: [
+      "Stroke & Paralysis Rehabilitation",
+      "Sciatica & Lumbar Disc Herniation",
+      "Pediatric Cerebral Palsy & Joint Pain",
+      "Post-Surgical Joint Mobilization"
+    ],
+    timing: "Daily: 09:00 AM – 02:00 PM",
+    days: ["Daily"],
+    image: "https://i.postimg.cc/qMLpxrJJ/Dr-jaweria.jpg",
+    gender: "female",
+    notes: "Equipped with mechanical traction and modern electrotherapy."
+  },
+  {
+    id: "dr-hammad-amin",
+    name: "Dr. Hammad Amin Mirza",
+    urduName: "",
+    title: "Consultant ENT Surgeon & Allergologist",
+    department: "ENT (Ear, Nose, Throat)",
+    departmentUrdu: "",
+    qualification: "M.B.B.S, F.C.P.S (ENT)",
+    experience: "Member EAACI & ERS · Academic Registrar ENT Gujranwala Teaching Hospital",
+    specialties: [
+      "Sinusitis & Endoscopic Sinus Surgery",
+      "Allergic Rhinitis, Polyps & Hearing Loss",
+      "Tonsillitis & Balance / Vertigo Disorders"
+    ],
+    timing: "Wednesday: 03:00 PM – 05:00 PM",
+    days: ["Wednesday"],
+    image: "https://i.postimg.cc/5N3fSJ4X/Dr-hammad.jpg",
+    gender: "male",
+    notes: "Academic registrar and rhinologic allergy specialist."
+  },
+  {
+    id: "dr-jawad-malik",
+    name: "Dr. Jawad Malik",
+    urduName: "",
+    title: "Specialist Urologist & Andrologist",
+    department: "Urology & Kidney Care",
+    departmentUrdu: "",
+    qualification: "M.B.B.S, M.S (M.D Russia)",
+    experience: "Resident M.S Urology GMC / DHQ Teaching Hospital Gujranwala under Prof. Dr. Khalid Hassan",
+    specialties: [
+      "Kidney & Bladder Stones Treatment",
+      "Male Infertility & Prostate Enlargement",
+      "Urinary Tract Infections & Obstructions"
+    ],
+    timing: "Sunday: 11:00 AM – 02:00 PM",
+    days: ["Sunday"],
+    image: "https://i.postimg.cc/3r28Wpzy/Dr-jawad.jpg",
+    gender: "male",
+    notes: "Minimally invasive urological management and kidney stone laser treatment."
+  },
+  {
     id: "dr-nabeela-aslam",
-    name: "Dr. Nabeela Aslam",
+    name: "Lady Dr. Nabeela Aslam",
     urduName: "",
     title: "Consultant Gynecologist & Radiologist",
     department: "Gynecology & Radiology",
@@ -79,55 +201,15 @@ export const DOCTORS_DATA: Doctor[] = [
       "Normal Delivery & Cesarean Section",
       "Uterine Fibroids & Ovarian Cysts"
     ],
-    timing: "Sunday: 10:00 AM – 01:00 PM",
+    timing: "Sunday: 10:00 AM – 02:00 PM",
     days: ["Sunday"],
     image: "",
     gender: "female",
     notes: "Gold Medalist consultant specializing in high-risk obstetrics."
   },
   {
-    id: "dr-jawad-malik",
-    name: "Dr. Jawad Malik",
-    urduName: "",
-    title: "Specialist Urologist & Andrologist",
-    department: "Urology & Kidney Care",
-    departmentUrdu: "",
-    qualification: "M.B.B.S, M.S (M.D Russia)",
-    experience: "Resident M.S Urology GMC / DHQ Teaching Hospital Gujranwala under Prof. Dr. Khalid Hassan",
-    specialties: [
-      "Kidney & Bladder Stones Treatment",
-      "Male Infertility & Prostate Enlargement",
-      "Urinary Tract Infections & Obstructions"
-    ],
-    timing: "Sunday: 10:00 AM – 02:00 PM",
-    days: ["Sunday"],
-    image: "https://i.postimg.cc/3r28Wpzy/Dr-jawad.jpg",
-    gender: "male",
-    notes: "Minimally invasive urological management and kidney stone laser treatment."
-  },
-  {
-    id: "dr-hammad-amin",
-    name: "Dr. Hammad Amin Mirza",
-    urduName: "",
-    title: "Consultant ENT Surgeon & Allergologist",
-    department: "ENT (Ear, Nose, Throat)",
-    departmentUrdu: "",
-    qualification: "M.B.B.S, F.C.P.S (ENT)",
-    experience: "Member EAACI & ERS · Academic Registrar ENT Gujranwala Teaching Hospital",
-    specialties: [
-      "Sinusitis & Endoscopic Sinus Surgery",
-      "Allergic Rhinitis, Polyps & Hearing Loss",
-      "Tonsillitis & Balance / Vertigo Disorders"
-    ],
-    timing: "Wednesday: 03:00 PM – 05:00 PM",
-    days: ["Wednesday"],
-    image: "https://i.postimg.cc/5N3fSJ4X/Dr-hammad.jpg",
-    gender: "male",
-    notes: "Academic registrar and rhinologic allergy specialist."
-  },
-  {
     id: "dr-syeda-malaika",
-    name: "Dr. Syeda Malaika",
+    name: "Lady Dr. Saira Malaika",
     urduName: "",
     title: "MIT Diagnostic Sonographer & Ultrasound Specialist",
     department: "Diagnostic Ultrasound & Imaging",
@@ -141,53 +223,11 @@ export const DOCTORS_DATA: Doctor[] = [
       "Thyroid, Breast & Soft Tissue Ultrasound",
       "Fetal Growth & Anomaly Screening"
     ],
-    timing: "Daily: 03:00 PM – 06:00 PM",
-    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    image: "",
+    timing: "Daily: 02:30 PM – 05:30 PM",
+    days: ["Daily"],
+    image: "https://i.postimg.cc/3RWNgbBQ/Dr-malaika.jpg",
     gender: "female",
     notes: "Dedicated female sonographer offering complete privacy and precision scans."
-  },
-  {
-    id: "dr-nazia-jabeen",
-    name: "Lady Dr. Nazia Jabeen (LHV)",
-    urduName: "",
-    title: "Specialist Gynecologist & Maternity Consultant (LHV)",
-    department: "Gynecology & Obstetrics",
-    departmentUrdu: "",
-    qualification: "M.B.B.S, FCPS Post-Graduate Training (Obs/Gyne), Certified LHV",
-    experience: "Comprehensive clinical experience in maternal care, labor suites, and prenatal health",
-    specialties: [
-      "Normal Delivery & Antenatal Checkups",
-      "Female Infertility & Ovarian Health",
-      "Minor & Major Gynecological Surgeries",
-      "Postnatal Health & Lactation Support"
-    ],
-    timing: "Daily: 10:00 AM – 02:00 PM",
-    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    image: "https://i.postimg.cc/ZKcJxmb4/dr-nazia.jpg",
-    gender: "female",
-    notes: "Daily outpatient and emergency maternity management with full female clinical team."
-  },
-  {
-    id: "dr-javeria-safdar",
-    name: "Dr. Javeria Safdar",
-    urduName: "",
-    title: "Senior Physiotherapist & Neuro-Rehab Specialist",
-    department: "Physiotherapy & Rehabilitation",
-    departmentUrdu: "",
-    qualification: "Doctor of Physical Therapy (D.P.T, University of Lahore)",
-    experience: "Specialist in neurological rehabilitation and orthopedic physiotherapy",
-    specialties: [
-      "Stroke & Paralysis Rehabilitation",
-      "Sciatica & Lumbar Disc Herniation",
-      "Pediatric Cerebral Palsy & Joint Pain",
-      "Post-Surgical Mobilization"
-    ],
-    timing: "Daily: 10:00 AM – 02:00 PM",
-    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    image: "https://i.postimg.cc/qMLpxrJJ/Dr-jaweria.jpg",
-    gender: "female",
-    notes: "Equipped with mechanical traction and modern electrotherapy."
   }
 ];
 
@@ -198,7 +238,7 @@ export const DEPARTMENTS_DATA: Department[] = [
     urduName: "",
     description: "Complete women's healthcare, normal deliveries, C-sections, PCOS, and specialized infertility management with all-female medical team.",
     iconName: "HeartHandshake",
-    headDoctor: "Dr. Nabeela Aslam, Lady Dr. Anam Saleem & Lady Dr. Nazia Jabeen (LHV)",
+    headDoctor: "Lady Dr. Nabeela Aslam, Lady Dr. Anam Saleem & Lady Dr. Nazia Jabeen",
     keyServices: [
       "Normal Delivery & Cesarean Section (C-Section)",
       "Advanced Infertility Treatment & Ovulation Tracking",
@@ -210,7 +250,7 @@ export const DEPARTMENTS_DATA: Department[] = [
       "Irregular Menstrual Cycles & Bleeding",
       "Uterine Fibroids & Ovarian Cysts"
     ],
-    operatingHours: "Daily OPD: 10 AM - 2 PM & 5 PM - 8 PM | 24/7 Maternity Emergency",
+    operatingHours: "Daily OPD: 09:00 AM – 02:00 PM & Specialist Days | 24/7 Maternity Emergency",
     image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=1200"
   },
   {
@@ -219,7 +259,7 @@ export const DEPARTMENTS_DATA: Department[] = [
     urduName: "",
     description: "High-definition diagnostic ultrasound imaging wing led by certified sonographers and radiologists for pregnancy, pelvic, and abdominal health.",
     iconName: "Microscope",
-    headDoctor: "Dr. Syeda Malaika (MIT Diagnostic Sonographer) & Dr. Nabeela Aslam",
+    headDoctor: "Lady Dr. Saira Malaika & Lady Dr. Nabeela Aslam",
     keyServices: [
       "Routine & High-Resolution Obstetric Ultrasound",
       "Abdominal, Liver, Gallbladder & Kidney Scans",
@@ -231,7 +271,7 @@ export const DEPARTMENTS_DATA: Department[] = [
       "Gallstones, Kidney Stones & Hydronephrosis",
       "Ovarian Cysts & Pelvic Pain Evaluation"
     ],
-    operatingHours: "Daily: 03:00 PM – 06:00 PM & On-Call Emergency Sonography",
+    operatingHours: "Daily: 02:30 PM – 05:30 PM & 24/7 Emergency Scans",
     image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200"
   },
   {
@@ -256,6 +296,27 @@ export const DEPARTMENTS_DATA: Department[] = [
     image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1200"
   },
   {
+    id: "general-medicine",
+    name: "General Medicine & Outpatient OPD",
+    urduName: "",
+    description: "Comprehensive day-long outpatient medical consultations, diabetes, hypertension, and primary acute medical management.",
+    iconName: "Stethoscope",
+    headDoctor: "Dr. Tabassum & Dr. Aslam Raza",
+    keyServices: [
+      "Full-Day Outpatient Consultations",
+      "Diabetes & Blood Pressure Management",
+      "Preventive Health Checkups & Triage",
+      "Chronic Disease Clinical Supervision"
+    ],
+    commonConditions: [
+      "Seasonal Fevers, Flu & Respiratory Ailments",
+      "Uncontrolled Blood Pressure & Blood Sugar",
+      "Gastrointestinal Complaints & Weakness"
+    ],
+    operatingHours: "Daily: 09:30 AM – 05:30 PM | 24/7 Emergency",
+    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
     id: "urology-kidney",
     name: "Urology & Kidney Care",
     urduName: "",
@@ -273,7 +334,7 @@ export const DEPARTMENTS_DATA: Department[] = [
       "Urinary Difficulty & Burning",
       "Male Subfertility"
     ],
-    operatingHours: "Sunday: 10:00 AM – 02:00 PM",
+    operatingHours: "Sunday: 11:00 AM – 02:00 PM",
     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"
   },
   {
@@ -303,7 +364,7 @@ export const DEPARTMENTS_DATA: Department[] = [
     urduName: "",
     description: "Modern rehabilitation gym equipped with mechanical traction, TENS electrotherapy, and neuro-recovery protocols.",
     iconName: "Accessibility",
-    headDoctor: "Dr. Javeria Safdar (DPT, UOL)",
+    headDoctor: "Lady Dr. Javeria Safdar (DPT, UOL)",
     keyServices: [
       "Stroke (Paralysis) Neuro-Rehabilitation",
       "Sciatica & Spine Decompression",
@@ -315,7 +376,7 @@ export const DEPARTMENTS_DATA: Department[] = [
       "Severe Sciatica & Disc Pain",
       "Knee Osteoarthritis & Back Pain"
     ],
-    operatingHours: "Daily: 10:00 AM – 02:00 PM",
+    operatingHours: "Daily: 09:00 AM – 02:00 PM",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200"
   },
   {
@@ -423,9 +484,9 @@ export const CHUGHTAI_LAB_TESTS: LabTest[] = [
     id: "ultrasound",
     name: "Abdominal & Pelvic Ultrasound",
     category: "Radiology",
-    turnaroundTime: "Instant Result (3 PM - 6 PM)",
+    turnaroundTime: "Instant Result (Daily 2:30 PM – 5:30 PM)",
     fastingRequired: true,
-    description: "High-resolution real-time imaging conducted by Dr. Syeda Malaika & Dr. Nabeela Aslam."
+    description: "High-resolution real-time imaging conducted by Lady Dr. Saira Malaika & Lady Dr. Nabeela Aslam."
   }
 ];
 
@@ -447,7 +508,7 @@ export const FACILITIES_DATA: Facility[] = [
     id: "ultrasound-suite",
     name: "Digital Ultrasound & Imaging Suite",
     tagline: "High-resolution diagnostic sonography for mothers & patients",
-    description: "Equipped with multi-frequency probes, color Doppler, and supervised by Dr. Syeda Malaika (MIT Sonographer) & Dr. Nabeela Aslam.",
+    description: "Equipped with multi-frequency probes, color Doppler, and supervised by Lady Dr. Saira Malaika (MIT Sonographer) & Lady Dr. Nabeela Aslam.",
     features: [
       "Dedicated female sonographer for complete privacy",
       "Obstetric 3D/4D pregnancy anomaly scans",
@@ -455,7 +516,7 @@ export const FACILITIES_DATA: Facility[] = [
       "Instant reports delivered with clinical interpretation"
     ],
     image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=900",
-    hours: "Daily 03:00 PM – 06:00 PM & 24/7 Emergency"
+    hours: "Daily 02:30 PM – 05:30 PM & 24/7 Emergency"
   },
   {
     id: "chughtai-lab",
@@ -507,7 +568,7 @@ export const FACILITIES_DATA: Facility[] = [
       "Individualized one-on-one sessions"
     ],
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=900",
-    hours: "Daily 10:00 AM – 02:00 PM"
+    hours: "Daily 09:00 AM – 02:00 PM"
   },
   {
     id: "pharmacy",
@@ -538,9 +599,9 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     id: "t2",
     patientName: "Farzana Begum",
     location: "Warpal Chattha",
-    doctorConsulted: "Dr. Nabeela Aslam & Lady Dr. Nazia Jabeen",
+    doctorConsulted: "Lady Dr. Nabeela Aslam & Lady Dr. Nazia Jabeen",
     rating: 5,
-    comment: "Dr. Nabeela Aslam and Lady Dr. Nazia Jabeen are exceptional. Their calm demeanor, expert ultrasound scans, and caring maternity treatment made our delivery safe and smooth.",
+    comment: "Lady Dr. Nabeela Aslam and Lady Dr. Nazia Jabeen are exceptional. Their calm demeanor, expert ultrasound scans, and caring maternity treatment made our delivery safe and smooth.",
     date: "November 2026"
   },
   {
@@ -556,9 +617,9 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     id: "t4",
     patientName: "Sobia Akram",
     location: "Sialkot Bypass",
-    doctorConsulted: "Dr. Javeria Safdar",
+    doctorConsulted: "Lady Dr. Javeria Safdar",
     rating: 5,
-    comment: "My mother suffered a mild stroke. Dr. Javeria's daily physiotherapy sessions enabled her to walk independently with full confidence again.",
+    comment: "My mother suffered a mild stroke. Lady Dr. Javeria's daily physiotherapy sessions enabled her to walk independently with full confidence again.",
     date: "September 2026"
   }
 ];
@@ -570,11 +631,11 @@ export const FAQS_DATA = [
   },
   {
     question: "What are the timings for Diagnostic Ultrasound?",
-    answer: "Our Diagnostic Ultrasound and Sonography department is open daily from 03:00 PM to 06:00 PM under Dr. Syeda Malaika (MIT Diagnostic Sonographer) and Dr. Nabeela Aslam (Diploma in Radiology Russia). Emergency sonography is available 24/7."
+    answer: "Our Diagnostic Ultrasound department is open daily from 02:30 PM to 05:30 PM under Lady Dr. Saira Malaika (MIT Diagnostic Sonographer) and on Wednesdays 10:00 AM – 01:00 PM with Lady Dr. Nabeela Aslam. Emergency sonography is available 24/7."
   },
   {
     question: "How do I book an appointment with a specialist?",
-    answer: "You can book directly using the 'Book Appointment' button on the website, or click the WhatsApp button to instantly receive your consultation token."
+    answer: "You can book directly using the 'Book Appointment' button on the website, call our call desk at 0319-1401391, or click the WhatsApp button (0300-6409878) to instantly receive your consultation token."
   },
   {
     question: "Are Chughtai Lab diagnostic tests available round the clock?",
@@ -586,6 +647,6 @@ export const FAQS_DATA = [
   },
   {
     question: "Are female doctors available for delivery and maternity checkups?",
-    answer: "Yes, Dr. Nabeela Aslam (MBBS, MCPS Obs/Gyne), Lady Dr. Anam Saleem (Gold Medalist), and Lady Dr. Nazia Jabeen (LHV) lead our maternity wing alongside experienced female nurses."
+    answer: "Yes, Lady Dr. Nabeela Aslam (MBBS, MCPS Obs/Gyne), Lady Dr. Anam Saleem (Gold Medalist), and Lady Dr. Nazia Jabeen (LHV) lead our maternity wing alongside experienced female nurses."
   }
 ];

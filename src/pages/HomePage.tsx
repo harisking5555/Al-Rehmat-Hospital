@@ -269,17 +269,17 @@ export const HomePage: React.FC<HomePageProps> = ({ setActiveTab, onOpenBooking 
                   />
 
                   <div className="min-w-0 flex-1">
-                    <span className="text-[11px] font-bold text-red-600 uppercase block truncate">
+                    <span className="text-[11px] font-bold text-red-600 uppercase tracking-wide block truncate">
                       {doc.department}
                     </span>
-                    <h3 className="font-heading font-bold text-base text-slate-900 truncate mt-0.5">
+                    <h3 className="font-heading font-bold text-base text-slate-900 leading-snug mt-1 break-words">
                       {doc.name}
                     </h3>
-                    <p className="text-[11px] text-slate-500 font-medium truncate">
+                    <p className="text-[11px] text-slate-500 font-medium leading-normal mt-1.5 break-words">
                       {doc.qualification}
                     </p>
                     {doc.isGoldMedalist && (
-                      <span className="inline-block mt-1 text-[10px] font-extrabold text-amber-800 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">
+                      <span className="inline-block mt-1.5 text-[10px] font-extrabold text-amber-800 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">
                         Gold Medalist
                       </span>
                     )}
