@@ -1,0 +1,6 @@
+{
+  "name": "Al Rehmat Hospital - 24/7 Healthcare & Medical Complex",
+  "description": "Official portal of Al Rehmat Hospital, Gujranwala. Offering 24/7 Emergency, Gynecology, Pediatrics, Urology, ENT, Physiotherapy, and Chughtai Lab Diagnostic Services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
