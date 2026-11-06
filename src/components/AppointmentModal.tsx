@@ -231,7 +231,9 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                 <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between text-xs">
                   <div>
                     <span className="font-bold text-slate-900">{selectedDoctor.name}</span>
-                    <span className="text-slate-500 ml-2">· {selectedDoctor.qualification}</span>
+                    {selectedDoctor.qualification && (
+                      <span className="text-slate-500 ml-2">· {selectedDoctor.qualification}</span>
+                    )}
                     <div className="text-red-700 font-semibold mt-0.5">
                       Schedule: {selectedDoctor.timing}
                     </div>

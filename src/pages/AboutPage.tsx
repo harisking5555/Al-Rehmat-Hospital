@@ -46,7 +46,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, setActiveTa
             "High-Quality Clinical Care for Every Family"
           </h2>
           <p className="text-sm text-slate-600 leading-relaxed max-w-3xl">
-            Al Rehmat Hospital was founded to deliver top-tier specialist care right here in Verpal Chatta, Saim Nala, Gujranwala. Under the clinical leadership of <strong>Dr. Muhammad Aslam Raza (D.H.M.S, R.H.M.P)</strong>, we bring together recognized consultants in Gynecology, Pediatrics, Urology, ENT, and Physiotherapy, backed by round-the-clock emergency services and official Chughtai Lab diagnostic facilities.
+            Al Rehmat Hospital was founded to deliver top-tier specialist care right here in Verpal Chatta, Saim Nala, Gujranwala. Under the clinical leadership of <strong>Dr. Aslam Raza (MS)</strong>, we bring together recognized consultants in Gynecology, Pediatrics, Urology, ENT, and Physiotherapy, backed by round-the-clock emergency services and official Chughtai Lab diagnostic facilities.
           </p>
 
           <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-100 text-xs">

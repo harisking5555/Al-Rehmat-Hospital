@@ -12,7 +12,7 @@ export const HOSPITAL_INFO = {
   directCallRaw: "03191401391",
   whatsappNumber: "923191401391",
   emergencyPhone: "0319-1401391",
-  patron: "Dr. Muhammad Aslam Raza (D.H.M.S, R.H.M.P)",
+  patron: "Dr. Aslam Raza (MS)",
   address: "Verpal Chatta, Saim Nala, Gujranwala, Punjab, Pakistan",
   secondaryBranch: "Sialkot Bypass, Opposite Sheikh Siddique Eye Hospital, Gujranwala",
   emergencyHours: "24 Hours / 7 Days a Week",
@@ -23,7 +23,7 @@ export const HOSPITAL_INFO = {
 export const DOCTORS_DATA: Doctor[] = [
   {
     id: "dr-aslam",
-    name: "Dr. Aslam",
+    name: "Dr. Aslam Raza (MS)",
     urduName: "",
     title: "Senior Medical Consultant & Physician",
     department: "General Medicine & Clinical Care",
@@ -69,7 +69,7 @@ export const DOCTORS_DATA: Doctor[] = [
     title: "Consultant Gynecologist & Maternity Specialist (LHV)",
     department: "Gynecology & Obstetrics",
     departmentUrdu: "",
-    qualification: "M.B.B.S, FCPS Post-Graduate Training (Obs/Gyne), Certified LHV",
+    qualification: "",
     experience: "Comprehensive clinical experience in maternal care, labor suites, and prenatal health",
     specialties: [
       "Normal Delivery & Antenatal Checkups",
@@ -279,7 +279,7 @@ export const DEPARTMENTS_DATA: Department[] = [
     urduName: "",
     description: "Comprehensive day-long outpatient medical consultations, diabetes, hypertension, and primary acute medical management.",
     iconName: "Stethoscope",
-    headDoctor: "Dr. Muhammad Aslam Raza",
+    headDoctor: "Dr. Aslam Raza (MS)",
     keyServices: [
       "Full-Day Outpatient Consultations",
       "Diabetes & Blood Pressure Management",

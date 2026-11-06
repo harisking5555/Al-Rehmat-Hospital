@@ -275,9 +275,11 @@ export const HomePage: React.FC<HomePageProps> = ({ setActiveTab, onOpenBooking 
                     <h3 className="font-heading font-bold text-base text-slate-900 leading-snug mt-1 break-words">
                       {doc.name}
                     </h3>
-                    <p className="text-[11px] text-slate-500 font-medium leading-normal mt-1.5 break-words">
-                      {doc.qualification}
-                    </p>
+                    {doc.qualification ? (
+                      <p className="text-[11px] text-slate-500 font-medium leading-normal mt-1.5 break-words">
+                        {doc.qualification}
+                      </p>
+                    ) : null}
                     {doc.isGoldMedalist && (
                       <span className="inline-block mt-1.5 text-[10px] font-extrabold text-amber-800 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">
                         Gold Medalist

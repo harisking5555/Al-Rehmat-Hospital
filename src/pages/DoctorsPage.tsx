@@ -119,9 +119,11 @@ export const DoctorsPage: React.FC<DoctorsPageProps> = ({ onOpenBooking }) => {
                     <h3 className="font-heading font-bold text-base sm:text-lg text-slate-900 leading-snug mt-1 break-words">
                       {doc.name}
                     </h3>
-                    <p className="text-xs text-slate-500 font-medium leading-normal mt-1.5 break-words">
-                      {doc.qualification}
-                    </p>
+                    {doc.qualification ? (
+                      <p className="text-xs text-slate-500 font-medium leading-normal mt-1.5 break-words">
+                        {doc.qualification}
+                      </p>
+                    ) : null}
                     {doc.isGoldMedalist && (
                       <span className="inline-block mt-1.5 text-[10px] font-extrabold text-amber-800 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded">
                         Gold Medalist
@@ -198,7 +200,9 @@ export const DoctorsPage: React.FC<DoctorsPageProps> = ({ onOpenBooking }) => {
                   <tr key={doc.id} className="hover:bg-slate-50 transition-colors">
                     <td className="py-3.5 px-4 font-bold text-slate-900">
                       <div>{doc.name}</div>
-                      <div className="text-[11px] font-normal text-slate-400">{doc.qualification}</div>
+                      {doc.qualification ? (
+                        <div className="text-[11px] font-normal text-slate-400">{doc.qualification}</div>
+                      ) : null}
                     </td>
                     <td className="py-3.5 px-4 text-red-700 font-medium">{doc.department}</td>
                     <td className="py-3.5 px-4 font-medium">{doc.days.join(', ')}</td>
