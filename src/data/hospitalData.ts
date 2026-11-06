@@ -6,14 +6,14 @@ export const HOSPITAL_INFO = {
   tagline: "24/7 Quality Healthcare & Diagnostic Center",
   logo: "https://i.postimg.cc/0N8V7NR7/Whats-App-Image-2026-10-28-at-12-45-09-PM.jpg",
   email: "alrehmathospital01@gmail.com",
-  phone: "0300-6409878",
-  phoneRaw: "03006409878",
+  phone: "0319-1401391",
+  phoneRaw: "03191401391",
   directCallPhone: "0319-1401391",
   directCallRaw: "03191401391",
-  whatsappNumber: "923006409878",
-  emergencyPhone: "0300-6409878",
+  whatsappNumber: "923191401391",
+  emergencyPhone: "0319-1401391",
   patron: "Dr. Muhammad Aslam Raza (D.H.M.S, R.H.M.P)",
-  address: "Warpal Chattha, Seem Nala, Gujranwala, Punjab, Pakistan",
+  address: "Verpal Chatta, Saim Nala, Gujranwala, Punjab, Pakistan",
   secondaryBranch: "Sialkot Bypass, Opposite Sheikh Siddique Eye Hospital, Gujranwala",
   emergencyHours: "24 Hours / 7 Days a Week",
   opdHours: "Daily 09:00 AM – 07:00 PM",
@@ -21,26 +21,6 @@ export const HOSPITAL_INFO = {
 };
 
 export const DOCTORS_DATA: Doctor[] = [
-  {
-    id: "dr-tabassum",
-    name: "Lady Dr. Tabassum",
-    urduName: "",
-    title: "General Physician & Outpatient Specialist",
-    department: "General Medicine & Emergency",
-    departmentUrdu: "",
-    qualification: "M.B.B.S, R.M.P",
-    experience: "Extensive experience in outpatient diagnosis, internal medicine, and emergency care",
-    specialties: [
-      "General Medical Consultations & Health Checkups",
-      "Hypertension, Diabetes & Fever Management",
-      "Acute Outpatient & Preventive Care"
-    ],
-    timing: "Daily: 09:30 AM – 05:30 PM",
-    days: ["Daily"],
-    image: "",
-    gender: "female",
-    notes: "Available daily for full-day clinical and outpatient consultations."
-  },
   {
     id: "dr-aslam",
     name: "Dr. Aslam",
@@ -57,7 +37,7 @@ export const DOCTORS_DATA: Doctor[] = [
     ],
     timing: "Daily: 09:30 AM – 05:30 PM",
     days: ["Daily"],
-    image: "",
+    image: "https://i.postimg.cc/xjHywSq5/Dr-aslam-Raza.jpg",
     gender: "male",
     notes: "Senior clinical consultant at Al Rehmat Hospital."
   },
@@ -93,8 +73,6 @@ export const DOCTORS_DATA: Doctor[] = [
     experience: "Comprehensive clinical experience in maternal care, labor suites, and prenatal health",
     specialties: [
       "Normal Delivery & Antenatal Checkups",
-      "Female Infertility & Ovarian Health",
-      "Minor & Major Gynecological Surgeries",
       "Postnatal Health & Lactation Support"
     ],
     timing: "Daily: 09:00 AM – 02:00 PM",
@@ -203,7 +181,7 @@ export const DOCTORS_DATA: Doctor[] = [
     ],
     timing: "Sunday: 10:00 AM – 02:00 PM",
     days: ["Sunday"],
-    image: "",
+    image: "https://i.postimg.cc/tRPtKH7B/LADY-Dr-anam.jpg",
     gender: "female",
     notes: "Gold Medalist consultant specializing in high-risk obstetrics."
   },
@@ -301,7 +279,7 @@ export const DEPARTMENTS_DATA: Department[] = [
     urduName: "",
     description: "Comprehensive day-long outpatient medical consultations, diabetes, hypertension, and primary acute medical management.",
     iconName: "Stethoscope",
-    headDoctor: "Dr. Tabassum & Dr. Aslam Raza",
+    headDoctor: "Dr. Muhammad Aslam Raza",
     keyServices: [
       "Full-Day Outpatient Consultations",
       "Diabetes & Blood Pressure Management",
@@ -598,7 +576,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "t2",
     patientName: "Farzana Begum",
-    location: "Warpal Chattha",
+    location: "Verpal Chatta",
     doctorConsulted: "Lady Dr. Nabeela Aslam & Lady Dr. Nazia Jabeen",
     rating: 5,
     comment: "Lady Dr. Nabeela Aslam and Lady Dr. Nazia Jabeen are exceptional. Their calm demeanor, expert ultrasound scans, and caring maternity treatment made our delivery safe and smooth.",
@@ -635,7 +613,7 @@ export const FAQS_DATA = [
   },
   {
     question: "How do I book an appointment with a specialist?",
-    answer: "You can book directly using the 'Book Appointment' button on the website, call our call desk at 0319-1401391, or click the WhatsApp button (0300-6409878) to instantly receive your consultation token."
+    answer: "You can book directly using the 'Book Appointment' button on the website, or call / WhatsApp our helpline at 0319-1401391 to instantly receive your consultation token."
   },
   {
     question: "Are Chughtai Lab diagnostic tests available round the clock?",
@@ -643,7 +621,7 @@ export const FAQS_DATA = [
   },
   {
     question: "Where is Al Rehmat Hospital located?",
-    answer: "The main hospital complex is located at Warpal Chattha, Seem Nala, Gujranwala. We also have a referral unit at Sialkot Bypass, opposite Sheikh Siddique Eye Hospital."
+    answer: "The main hospital complex is located at Verpal Chatta, Saim Nala, Gujranwala. We also have a referral unit at Sialkot Bypass, opposite Sheikh Siddique Eye Hospital."
   },
   {
     question: "Are female doctors available for delivery and maternity checkups?",

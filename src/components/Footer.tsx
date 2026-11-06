@@ -146,29 +146,15 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking }) =
             </h5>
 
             <div className="space-y-3 text-xs text-slate-600">
-              {/* Direct SIM Mobile Call Number */}
-              <a
-                href={`tel:${HOSPITAL_INFO.directCallRaw}`}
-                className="flex items-start gap-2.5 text-slate-800 hover:text-red-600 transition-colors group p-2 rounded-xl bg-slate-50 border border-slate-200"
-              >
-                <Phone className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
-                <div>
-                  <span className="text-[11px] text-slate-500 block font-semibold">Direct Call Helpline (SIM):</span>
-                  <span className="font-extrabold text-sm text-slate-900 group-hover:text-red-600">
-                    {HOSPITAL_INFO.directCallPhone}
-                  </span>
-                </div>
-              </a>
-
-              {/* Emergency Hotline / WhatsApp Number */}
+              {/* 24/7 Call & WhatsApp Helpline */}
               <a
                 href={`tel:${HOSPITAL_INFO.phoneRaw}`}
-                className="flex items-start gap-2.5 text-slate-800 hover:text-red-600 transition-colors group p-2 rounded-xl bg-slate-50 border border-slate-200"
+                className="flex items-start gap-2.5 text-slate-800 hover:text-red-600 transition-colors group p-3 rounded-2xl bg-slate-50 border border-slate-200"
               >
-                <Phone className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                <Phone className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-[11px] text-slate-500 block font-semibold">WhatsApp & Reception:</span>
-                  <span className="font-extrabold text-sm text-slate-900 group-hover:text-red-600">
+                  <span className="text-[11px] text-slate-500 block font-semibold">24/7 Helpline & WhatsApp:</span>
+                  <span className="font-extrabold text-base text-slate-900 group-hover:text-red-600">
                     {HOSPITAL_INFO.phone}
                   </span>
                 </div>

@@ -246,7 +246,7 @@ export const FacilitiesPage: React.FC = () => {
                       <input
                         type="tel"
                         required
-                        placeholder="e.g. 0300-1234567"
+                        placeholder="e.g. 0319-1234567"
                         value={samplingPhone}
                         onChange={(e) => setSamplingPhone(e.target.value)}
                         className="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs focus:ring-2 focus:ring-red-500 focus:outline-none"

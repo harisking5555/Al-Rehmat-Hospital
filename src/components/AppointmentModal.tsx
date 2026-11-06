@@ -161,7 +161,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                 {isSubmitted ? 'Appointment Confirmation' : 'Book Specialist Appointment'}
               </h3>
               <p className="text-red-100 text-xs mt-0.5">
-                Al Rehmat Hospital · Warpal Chattha, Gujranwala
+                Al Rehmat Hospital · Verpal Chatta, Saim Nala, Gujranwala
               </p>
             </div>
           </div>
@@ -269,7 +269,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                     <Phone className="w-4 h-4 text-slate-400 absolute left-3.5 top-3" />
                     <input
                       type="tel"
-                      placeholder="e.g. 0300-1234567"
+                      placeholder="e.g. 0319-1234567"
                       value={patientPhone}
                       onChange={(e) => setPatientPhone(e.target.value)}
                       className="w-full bg-slate-50 border border-slate-300 rounded-xl pl-10 pr-3.5 py-2.5 text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -459,7 +459,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                 {/* Important Instructions */}
                 <div className="pt-3 border-t border-slate-200 text-[11px] text-slate-500 space-y-1">
                   <p>• Please arrive 15 minutes before your time slot with previous medical reports.</p>
-                  <p>• Hospital Address: Warpal Chattha, Seem Nala, Gujranwala | Phone: 0300-6409878</p>
+                  <p>• Hospital Address: {HOSPITAL_INFO.address} | Phone & WhatsApp: {HOSPITAL_INFO.phone}</p>
                 </div>
               </div>
 

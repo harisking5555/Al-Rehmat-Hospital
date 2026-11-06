@@ -62,9 +62,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
               <Phone className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-[10px] font-bold text-slate-400 uppercase block">Direct Call (SIM)</span>
-              <a href={`tel:${HOSPITAL_INFO.directCallRaw}`} className="text-base font-black text-slate-900 hover:text-red-600 transition-colors block">
-                {HOSPITAL_INFO.directCallPhone}
+              <span className="text-[10px] font-bold text-slate-400 uppercase block">24/7 Call Helpline</span>
+              <a href={`tel:${HOSPITAL_INFO.phoneRaw}`} className="text-base font-black text-slate-900 hover:text-red-600 transition-colors block">
+                {HOSPITAL_INFO.phone}
               </a>
             </div>
           </div>
@@ -74,7 +74,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
               <Phone className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-[10px] font-bold text-slate-400 uppercase block">Emergency Helpline</span>
+              <span className="text-[10px] font-bold text-slate-400 uppercase block">Emergency Ward</span>
               <a href={`tel:${HOSPITAL_INFO.phoneRaw}`} className="text-base font-black text-slate-900 hover:text-red-600 transition-colors block">
                 {HOSPITAL_INFO.phone}
               </a>
@@ -86,14 +86,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
               <MessageCircle className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-[10px] font-bold text-slate-400 uppercase block">WhatsApp Chat</span>
+              <span className="text-[10px] font-bold text-slate-400 uppercase block">WhatsApp Inquiries</span>
               <a 
                 href={`https://wa.me/${HOSPITAL_INFO.whatsappNumber}`} 
                 target="_blank" 
                 rel="noreferrer"
                 className="text-xs font-bold text-emerald-700 hover:text-emerald-800 transition-colors block mt-0.5"
               >
-                Instant WhatsApp →
+                {HOSPITAL_INFO.phone} →
               </a>
             </div>
           </div>
@@ -164,7 +164,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
                     <input
                       type="tel"
                       required
-                      placeholder="e.g. 0300-1234567"
+                      placeholder="e.g. 0319-1234567"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-xs text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -272,7 +272,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking }) => {
 
               <div className="pt-2">
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Al Rehmat Hospital Warpal Chattha Gujranwala")}`}
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Al Rehmat Hospital Verpal Chatta Saim Nala Gujranwala")}`}
                   target="_blank"
                   rel="noreferrer"
                   className="w-full py-2.5 px-4 bg-red-600 hover:bg-red-700 text-white font-bold text-xs rounded-xl shadow-xs transition-colors flex items-center justify-center gap-2"
