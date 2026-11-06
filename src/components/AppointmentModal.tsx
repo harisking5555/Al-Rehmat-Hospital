@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Calendar, Clock, User, Phone, CheckCircle2, Printer, MessageCircle, FileText, AlertCircle } from 'lucide-react';
-import { DOCTORS_DATA, DEPARTMENTS_DATA, HOSPITAL_INFO } from '../data/hospitalData';
+import { DEPARTMENTS_DATA, HOSPITAL_INFO } from '../data/hospitalData';
+import { useDoctors } from '../context/DoctorContext';
 import { AppointmentRequest } from '../types/hospital';
 
 interface AppointmentModalProps {
@@ -14,6 +15,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
   onClose,
   preselectedDoctorId,
 }) => {
+  const { doctors } = useDoctors();
   const [patientName, setPatientName] = useState('');
   const [patientPhone, setPatientPhone] = useState('');
   const [patientAge, setPatientAge] = useState('');
@@ -30,15 +32,15 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
   useEffect(() => {
     if (preselectedDoctorId) {
       setSelectedDoctorId(preselectedDoctorId);
-      const doc = DOCTORS_DATA.find((d) => d.id === preselectedDoctorId);
+      const doc = doctors.find((d) => d.id === preselectedDoctorId);
       if (doc) {
         setSelectedDept(doc.department);
       }
-    } else if (!selectedDoctorId && DOCTORS_DATA.length > 0) {
-      setSelectedDoctorId(DOCTORS_DATA[0].id);
-      setSelectedDept(DOCTORS_DATA[0].department);
+    } else if (!selectedDoctorId && doctors.length > 0) {
+      setSelectedDoctorId(doctors[0].id);
+      setSelectedDept(doctors[0].department);
     }
-  }, [preselectedDoctorId, isOpen]);
+  }, [preselectedDoctorId, isOpen, doctors]);
 
   // Set default appointment date to tomorrow
   useEffect(() => {
@@ -52,7 +54,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
 
   const handleDeptChange = (deptName: string) => {
     setSelectedDept(deptName);
-    const matchingDocs = DOCTORS_DATA.filter((d) => d.department.includes(deptName) || deptName.includes(d.department));
+    const matchingDocs = doctors.filter((d) => d.department.includes(deptName) || deptName.includes(d.department));
     if (matchingDocs.length > 0) {
       setSelectedDoctorId(matchingDocs[0].id);
     }
@@ -60,13 +62,13 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
 
   const handleDoctorChange = (docId: string) => {
     setSelectedDoctorId(docId);
-    const doc = DOCTORS_DATA.find((d) => d.id === docId);
+    const doc = doctors.find((d) => d.id === docId);
     if (doc) {
       setSelectedDept(doc.department);
     }
   };
 
-  const selectedDoctor = DOCTORS_DATA.find((d) => d.id === selectedDoctorId);
+  const selectedDoctor = doctors.find((d) => d.id === selectedDoctorId);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -217,7 +219,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                     className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500"
                     required
                   >
-                    {DOCTORS_DATA.map((doc) => (
+                    {doctors.map((doc) => (
                       <option key={doc.id} value={doc.id}>
                         {doc.name} ({doc.title})
                       </option>

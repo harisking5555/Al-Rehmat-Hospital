@@ -4,9 +4,10 @@ import {
   ArrowRight, Ambulance, Microscope, Star, CheckCircle2, MessageCircle 
 } from 'lucide-react';
 import { 
-  HOSPITAL_INFO, DOCTORS_DATA, DEPARTMENTS_DATA, 
+  HOSPITAL_INFO, DEPARTMENTS_DATA, 
   CHUGHTAI_LAB_TESTS, TESTIMONIALS_DATA 
 } from '../data/hospitalData';
+import { useDoctors } from '../context/DoctorContext';
 import { DoctorAvatar } from '../components/DoctorAvatar';
 
 interface HomePageProps {
@@ -15,6 +16,7 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ setActiveTab, onOpenBooking }) => {
+  const { doctors } = useDoctors();
   // Hero slide state
   const [currentSlide, setCurrentSlide] = useState(0);
   // Testimonial slider state
@@ -253,7 +255,7 @@ export const HomePage: React.FC<HomePageProps> = ({ setActiveTab, onOpenBooking 
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {DOCTORS_DATA.map((doc) => (
+          {doctors.map((doc) => (
             <div
               key={doc.id}
               className="bg-white rounded-3xl p-6 border border-slate-200 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"

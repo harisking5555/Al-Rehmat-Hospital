@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Clock, Search, CheckCircle2, MessageCircle } from 'lucide-react';
-import { DOCTORS_DATA, HOSPITAL_INFO } from '../data/hospitalData';
+import { HOSPITAL_INFO } from '../data/hospitalData';
+import { useDoctors } from '../context/DoctorContext';
 import { DoctorAvatar } from '../components/DoctorAvatar';
 
 interface DoctorsPageProps {
@@ -8,12 +9,13 @@ interface DoctorsPageProps {
 }
 
 export const DoctorsPage: React.FC<DoctorsPageProps> = ({ onOpenBooking }) => {
+  const { doctors } = useDoctors();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDept, setSelectedDept] = useState('all');
 
   const departmentsList = [
     'all',
-    'General Medicine & Emergency',
+    'General Medicine & Clinical Care',
     'Gynecology & Obstetrics',
     'Pediatrics & General Medicine',
     'Diagnostic Ultrasound & Imaging',
@@ -22,7 +24,7 @@ export const DoctorsPage: React.FC<DoctorsPageProps> = ({ onOpenBooking }) => {
     'Physiotherapy & Rehabilitation',
   ];
 
-  const filteredDoctors = DOCTORS_DATA.filter((doc) => {
+  const filteredDoctors = doctors.filter((doc) => {
     const matchesDept = selectedDept === 'all' || doc.department === selectedDept;
     const matchesQuery = 
       doc.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -196,7 +198,7 @@ export const DoctorsPage: React.FC<DoctorsPageProps> = ({ onOpenBooking }) => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 text-slate-700">
-                {DOCTORS_DATA.map((doc) => (
+                {doctors.map((doc) => (
                   <tr key={doc.id} className="hover:bg-slate-50 transition-colors">
                     <td className="py-3.5 px-4 font-bold text-slate-900">
                       <div>{doc.name}</div>

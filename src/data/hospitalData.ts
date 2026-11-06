@@ -56,7 +56,7 @@ export const DOCTORS_DATA: Doctor[] = [
       "Hypertension, Diabetes & Stroke Recovery",
       "Pediatric Infections & Acute Fevers"
     ],
-    timing: "Monday to Saturday: 04:00 PM – 07:00 PM",
+    timing: "Monday to Saturday: 09:00 AM – 05:00 PM",
     days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     image: "https://i.postimg.cc/rFJqNTVq/Dr-nadeem.jpg",
     gender: "male",
@@ -270,7 +270,7 @@ export const DEPARTMENTS_DATA: Department[] = [
       "Childhood Weakness & Stunted Growth",
       "Respiratory Infections & Bronchitis"
     ],
-    operatingHours: "Monday to Saturday: 04:00 PM – 07:00 PM | 24/7 Emergency",
+    operatingHours: "Monday to Saturday: 09:00 AM – 05:00 PM | 24/7 Emergency",
     image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1200"
   },
   {

@@ -1,13 +1,14 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, ShieldCheck, ArrowUp } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, ShieldCheck, ArrowUp, Lock } from 'lucide-react';
 import { HOSPITAL_INFO } from '../data/hospitalData';
 
 interface FooterProps {
   setActiveTab: (tab: string) => void;
   onOpenBooking: () => void;
+  onOpenAdmin?: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking }) => {
+export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking, onOpenAdmin }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -194,11 +195,24 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenBooking }) =
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p className="text-slate-600 font-medium">© {new Date().getFullYear()} Al Rehmat Hospital, Gujranwala. All rights reserved.</p>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
             <span className="flex items-center gap-1.5 text-slate-700 font-medium">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
               <span>Certified PMDC Specialists</span>
             </span>
+
+            {/* Subtle discreet Staff / Admin Portal Button */}
+            {onOpenAdmin && (
+              <button
+                onClick={onOpenAdmin}
+                className="flex items-center gap-1 text-[11px] text-slate-400 hover:text-red-600 transition-colors cursor-pointer px-2 py-1 rounded-md hover:bg-slate-100 border border-transparent hover:border-slate-200"
+                title="Hospital Management / Staff Portal"
+              >
+                <Lock className="w-3 h-3" />
+                <span>Admin Portal</span>
+              </button>
+            )}
+
             <button
               onClick={scrollToTop}
               className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors cursor-pointer border border-slate-200"
